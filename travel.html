@@ -1,0 +1,51 @@
+<html>
+<head>
+  <link rel="stylesheet" type=/css" href="CAREER.CSS"> 
+</head>
+<body>
+
+<ul id="horizontal">
+  <li class="hornav"><a href="PROFILE.HTML">PROFILE</a></li>
+  <li><a class="active" href="TRAVEL.HTML">TRAVEL</a></li>
+  <li><a  href="CAREER.HTML">CAREER</a></li>
+</ul>
+
+<div class="tab">
+  <button class="tablinks" onmouseover="openCity(event, 'japan')">JAPAN</button>
+  <button class="tablinks" onmouseover="openCity(event, 'thai')">THAILAND</button>
+  <button class="tablinks" onmouseover="openCity(event, 'sk')">SOUTH KOREA</button>
+ </div>
+ 
+ <div i="japan" class="tabcontent">
+ <img src="picjap.jpg">
+  <h3>JAPAN</h3>
+  <p> Japan is an island country in east asian.</p>
+  
+  </div>
+  <div id="thai" class="tabcontent">
+  <img src="picthai".jpg">
+  <h3> THAILAND</h3>
+  <p>Thailand is a South Asian country.</p>
+  </div>
+  
+  <div id="sk" class="tabcontent">
+  <img src="pickor.jpg." width="20px" height="20px">
+  <h3>SOUTH KOREA</h3>
+  <p>South Korea is an east asian nation on the southern half of the Korean Peninsula.</div>
+  
+  <div class="clearfix"></div>
+  <script>
+  function openCity(evt, cityName){
+  var l, tabcontent, tablinks;
+  tabcontent= document .getElementsByClassName("tabcontent);
+  for(i=0; i<tablinks. length; i++){
+  tablinks[i].className=tablinks[i]className.replace("active","");
+  }
+  document.getElementById(cityName.style.display="block";
+  evt.currentTarget.className+="active";
+  }
+  </script>
+  </div>
+  </ul>
+  </body>
+  </html>
