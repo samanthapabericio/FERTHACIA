@@ -42,7 +42,7 @@ background-color: red;}
   border-left: none;
   height: 300px;
   display: none;
-  background-color: #97978F;
+  background-color: mink;
 }
 
 /* Clear floats after the tab */
@@ -109,8 +109,8 @@ body {font-family: "Lato", sans-serif;}
   padding: 20px;
   overflow: hidden;
   background-color: gray;
-  width: 1500px;
-  word-spacing: 500px;
+  width: 500px;
+  word-spacing: 100px;
 
 }
 .hornav{
