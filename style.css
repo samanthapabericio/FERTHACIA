@@ -119,9 +119,7 @@ body {font-family: "Lato", sans-serif;}
 }
 .active{
   background-color: #555;
-  padding: 20px;
- list-style-type: none;
- margin-right: 10px;
+  margin-right: 10px;
   margin-left:10px;
 }
 .prof{
