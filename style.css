@@ -109,12 +109,12 @@ body {font-family: "Lato", sans-serif;}
   padding: 20px;
   overflow: hidden;
   background-color: gray;
-  width: 2500px;
-  word-spacing: 100px;
+  width: 1500px;
+  word-spacing: 500px;
 
 }
 .hornav{
-  margin-left: 100px;
+  margin-left: 10px;
 }
 .active{
   background-color: #555;
