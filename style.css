@@ -25,7 +25,7 @@ background-color: #red;}
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #red;
 }
 
 /* Create an active/current "tab button" class */
@@ -138,5 +138,5 @@ img{
   margin-top: 20px;
 }
 
-
+.background-color: fossil;
 
