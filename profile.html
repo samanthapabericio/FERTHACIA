@@ -1,63 +1,64 @@
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
-  </head>
-  <body>
-    
-    <ul id="horizontal">
-      <li class="hornav">
-        <a class="active" href="profile.html"> PROFILE</a></li>
-      <li><a href="travel.html">TRAVEL</a</li>
-       <li><a href="career.html">CAREER</a></li>
-       
-        </ul>
-        
-    <div class="tab">
-      <button class="tablinks"
-              onmouseover="openCity(Event,'info')">INFO</button>
-      <button class="tablinks"
-               onmouseover="openCity(Event,'hobbies')">HOBBIES</button>
-       <button class="tablinks"
-               onmouseover="openCity(Event,'family')">FAMILY BACKGROUND</button>
-     </div>
-        
-        <div id="info" class="tabcontent">
-          <img src="picpat.jpg">
-          <center><h3>Samantha J. Pabericio</h3></center>
-          <p>20 Yrs. Old</p>
-          <p> 3 year student in Tagoloan Community College</p>
-        </div>
-        
-        <div id="hobbies" class="tabcontent"
-             <img src="picbad.jpg width="200px" height="200px">
-        <center><h3>HOBBY</h3></center>
-        <p><b> Playing Badminton</b> - I enjoy Badminton with some friends of mine, and it was sports that everyone love </p>
-        <p>and <b> Watching Anime</b>- For fun.</p>
-        
-      </div>
-    
-    <div id="famly" class="tabcontent">
-      <img src="picfam.jpg" width="200px" height="200px"
-           <center><h3>MyFamily</h3><center>
-      <p><b>My fathers Name</b>Eduel Flores Pabercio</p></b>
-      <p><b>My Mothers Name<b>Jovita Jacinto 
-        pabericio</b><p>
-        
-        <div class="clarfix"></div>
-        
-        <script>
-          function openCity(avt, cityNAme){
-            vari, tabcontent, tablinks;
-            tabcontent= document.getElemntsByCalssNAme("tabcontent");
-            for (i=0; i< tabcontent lengths; i++ ){
-              tabcontent[i] < style.display="none"
-            }
-            tablinks="document.getElementsByclassName)style.display="block";
-            evt.currenttargetclassname+="active;
-          }
-        </script>
-        
-        </body>
-      </html>
-        
+html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<ul id="horizontal">  
+ <li class="hornav">
+  <a class="active" href="PabericioProfile.html">PROFILE</a></li>
+  <li><a href="travel.html">TRAVEL</a></li>
+  <li><a href="career.html">CAREER</a></li>
+</ul>
+
+   
+<div class="tab">
+  <button class="tablinks" onmouseover="openCity(event,'info')">INFO</button>
+  <button class="tablinks" onmouseover="openCity(event,'hobbies')">HOBBIES</button>
+  <button class="tablinks" onmouseover="openCity(event,'famly')">FAMILY BACKGROUND</button>
+</div>
+
+<div id="info" class="tabcontent">
+<img src="picpat.jpg" width="200px" height="200px">
+  <center><h3>Samantha J. Pabericio</h3></center>
+  <p>20 Yrs. Old.</p>
+  <p>A 3rd year BSIT Student in Tagoloan Community Collage.</p>
+</div>
+
+<div id="hobbies" class="tabcontent">
+<img src="picbad.jpg" width="200px" height="200px">
+  <center> <h3> HOBBY</h3> </center>
+  <p> <b>Playing Badmenton</b> - I Enjoy playing badmenton with some friends of mine, and it was a sports that everyone are capable of playing. </p> 
+  <p><b>Reading Wattpad Books</b> - Reading some books is one of my favorite Hobbies.</p>
+  <p>and <b>Watching Anime</b> - For Fun.</p>
+</div>
+
+<div id="famly" class="tabcontent">
+<img src="picfam.jpg" width="200px" height="200px">
+ <center> <h3>My Family</h3> </center>
+  <p><b>My Fathers Name:</b> Eduel Flores Pabericio</p>
+  <p><b>My Mother's Name:</b> Jovita Jacinto Pabericio</p>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+</body>
+</html>
