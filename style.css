@@ -1,0 +1,22 @@
+body{
+  font-family:"lato, sans-serif;
+    background-color:red;}
+
+.tab{\
+  float:left;
+  border: 1px solid #ccc;
+  background-color:@f1f1f1;
+  width30%;
+  height:300px;
+}
+.tab button{
+  display:block;
+  background-color:inherit;
+  color:black;
+  padding 22px 16px;
+  width: 100p%;
+  cursor:pointer;
+  font-size17px{
+    
+    
+  
