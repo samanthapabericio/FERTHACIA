@@ -1,43 +1,58 @@
-<htmL>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css"
-   </head>
-    <body>
-      <ul id="horizontal">
-        
-        <li class hornav"> <a class="active" profile.html>PROFILE</a></li>
-        <li class hornav"> <a href=" travel.html">TRAVEL</a></li>
-        <li class hornav"> <a href=" career.html">CAREER</a></li>
-                                                 </ul>
-                                                 
-                                                 <div class="tab"
-             <button class="tablinks" onmouseover="opencity(event,'chef')"CHEF</button>
-            <button class="tablinks" onmouseover="opencity(event,'chef')"CHEF</button>
-              
-                                                                       <center><h3> samantha pabericio</h3></center
-  
-                                                                         <p> my family p>
-                                                                         <p>My fathers name<p>
-                                                                         <p>currently living in sugbongcogon tagoloan misamis oriental</p>
-                                                                         <[p>3rd year college student at Tagoloan Community College</p>
-                                                                         
-                                                                         <div id="hobbies" class="tabcontent'>
-                                                                                                             <center><h3>Hobby</h3></center>
-                                                                                                             
-                                                                                                             <script>
-                                                                                                             function opencity(evt.cityNAme){
-                                                                                                             var i, tabcontent links
-                                                                                                             tabcontent=
-                                                                                                             document.getElemntsByclassnamw ("tabcontent")
-                                                                                                             for (i=0; i<tabcontent legnt; i++ ){
-                                                                                                             tabcontent[i]sty.displauy=nonr;
-                                                                                                              document.getElemntsByclassnamw ("tabcontent")
-                                                                                                             for (i=0; i<tabcontent legnt; i++ ){
-                                                                                                             tabcontent[i]sty.displauy=nonr;
-                                                                                                             }
-                                                                                                             
-                                                                                                             </script>
-                                                                       
-                                                                                                 
-                                                                                                                            
-                                                  
+<li class="hornav">
+  <a class="active" href="PabericioProfile.html">PROFILE</a></li>
+  <li><a href="travel.html">TRAVEL</a></li>
+  <li><a href="career.html">CAREER</a></li>
+</ul>
+
+   
+<div class="tab">
+  <button class="tablinks" onmouseover="openCity(event,'info')">INFO</button>
+  <button class="tablinks" onmouseover="openCity(event,'hobbies')">HOBBIES</button>
+  <button class="tablinks" onmouseover="openCity(event,'famly')">FAMILY BACKGROUND</button>
+</div>
+
+<div id="info" class="tabcontent">
+<img src="picpat.jpg" width="200px" height="200px">
+  <center><h3>Samantha J. Pabericio</h3></center>
+  <p>21 Yrs. Old.</p>
+  <p>Currently living in Gracia Tagoloan, Misamis Oriental</p>
+  <p>A 3rd year BSIT Student in Tagoloan Community Collage.</p>
+</div>
+
+<div id="hobbies" class="tabcontent">
+<img src="picbad.jpg" width="200px" height="200px">
+  <center> <h3> HOBBY</h3> </center>
+  <p> <b>Playing Badmenton</b> - I Enjoy playing badmenton with some friends of mine, and it was a sports that everyone are capable of playing. </p> 
+  <p><b>Reading Wattpad Books</b> - Reading some books is one of my favorite Hobbies.</p>
+  <p>and <b>Watching Anime</b> - For Fun.</p>
+</div>
+
+<div id="famly" class="tabcontent">
+<img src="picfam.jpg" width="200px" height="200px">
+ <center> <h3>My Family</h3> </center>
+  <p><b>My Fathers Name:</b>Eduel Pabericio</p>
+  <p><b>My Mother's Name:</b> Jovita Pabericio</p>
+
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+</body>
+</html>
