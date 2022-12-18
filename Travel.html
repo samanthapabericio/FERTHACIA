@@ -1,32 +1,67 @@
-<html> 
-  <head> <link rel="stylesheet" type="text/css" href="style.css"> 
-  </head> 
- <body> 
-   
- <ul id="horizontal"> 
-   <li class="hornnav"> <a href="profile.html> PROFILE </a> </li> 
-   <li <a class="active" href="travel.html> TRAVEL </a> </li>    
-    <li <a href="career.html> CAREER </a> </li> 
-  </ul>
-<div class="tab"> 
-  <button class="tablinks" onmouseover="openCity(event,'japan')"> JAPAN </button> 
-  <button class="tablinks" onmouseover="openCity(event,'thai')"> THAILAND </button> 
-  <button class="tablinks" onmouseover="openCity(event,'sk')"> SOUTH KOREA </button> 
-</div> 
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<ul id="horizontal">  
+
+ <li class="hornav"><a href="profile.html">PROFILE</a></li>
+  <li><a class ="active" href="travel.html">TRAVEL</a></li>
+  <li><a href="career.html">CAREER</a></li>
+
+</ul>
+
+<div class="tab">
+  <button class="tablinks" onmouseover="openCity(event, 'japan')">JAPAN</button>
+  <button class="tablinks" onmouseover="openCity(event, 'thai')">THAILAND</button>
+  <button class="tablinks" onmouseover="openCity(event, 'sk')">SOUTH KOREA</button>
+</div>
+
 <div id="japan" class="tabcontent">
-  <img src="picjap.jpg"> 
-  <center> <h3> JAPAN </h3> </center> 
-  <p> This is my favorate place that i want to go someday. <p> 
-</div> 
+<img src="picjap.jpg" width="200px" height="200px">
+  <center><h3>JAPAN</h3></center>
+  <p>This is the place that i want to go.</p>
+  <p></p>
+</div>
+
 <div id="thai" class="tabcontent">
-  <img src="picthai.jpg"> 
-  <center> <h3> JAPAN </h3> </center> 
-  <p> This is my favorate place that i want to go someday. <p> 
-</div> 
+<img src="picthai.jpg" width="200px" height="200px">
+  <center><h3>THAILAND</h3></center>
+  <p>This is the place that i want to go.</p> 
+</div>
+
 <div id="sk" class="tabcontent">
-  <img src="picsk.jpg"> 
-  <center> <h3> JAPAN </h3> </center> 
-  <p> This is my favorate place that i want to go someday. <p> 
-</div> 
-</body> 
+<img src="pickor.jpg" width="200px" height="200px">
+  <center><h3>SOUTH KOREA</h3></center>
+  <p>This is the place that i want to go.</p>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+
+
+
+</div>
+</ul>
+</body>
 </html>
