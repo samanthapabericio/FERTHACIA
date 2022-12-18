@@ -1,25 +1,67 @@
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
 <body>
-  <ul id="horizontal">
-    <li class="hornav"><a href="profile.html">PROFILE</a></li>
-      <li class="hornav"><a href="travel.html"TRAVEL</a></li>
-     <li><a class="active" href="career.html">CAREER</a></li>
-  </ul>
-   
-  <div class="tab">
-    <button class="tablinks" onmouseover="opencity(event.'chef')">CHEF</button>
-     <button class="tablinks" onmouseover="opencity(event.'veterinary')">VETERINARY</button>
-     <button class="tablinks" onmouseover="opencity(event.'designer')">DESIGNER</button>
-  </div>
-  
-  <div id
-  
-  
-  
-  
- /body>
+<ul id="horizontal">  
+
+  <li class="hornav"><a href="profile.html">PROFILE</a></li>
+  <li><a href="travel.html">TRAVEL</a></li>
+  <li><a class ="active"href="career.html">CAREER</a></li>
+
+</ul>
+
+
+
+<div class="tab">
+  <button class="tablinks" onmouseover="openCity(event, 'Chef')">CHEF</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Veterinary')">VETERINARY</button>
+  <button class="tablinks" onmouseover="openCity(event, 'disigner')">DESIGNER</button>
+</div>
+
+<div id="Chef" class="tabcontent">
+	<img src="picche.jpg" width="200px" height="200px"> 
+	<h3> <center> THE DREAM I WANT </center> </h3>
+	<p> <center> CHEF </center> </p>
+</div>
+
+<div id="Veterinary" class="tabcontent">
+	<img src="picvet.jpg" width="200px" height="200px"> 
+	<h3> <center> THE DREAM I WANT </center> </h3>
+	<p> <center>  VETERINARIAN </center>  </p>
+</div>
+
+<div id="disigner" class="tabcontent"> 
+ <img src="picdis.jpg" width="200px" height="200px"> 
+	<h3> <center> THE DREAM I WANT </center> </h3>
+	<p> <center> DESIGNER </center> </p>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+
+
+</div>
+</ul>
+</body>
 </html>
